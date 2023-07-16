@@ -1,0 +1,144 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Off-white: hsl(0, 0%, 94%);
+  --Light-grey: hsl(0, 0%, 86%);
+  --Smokey-grey: hsl(0, 1%, 44%);
+  --Off-black: hsl(0, 0%, 8%);
+  --my-purple: hsl(259, 100%, 65%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--Off-white);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+  height: 470px;
+  background-color: white;
+  border-radius: 20px;
+  border-bottom-right-radius: 125px;
+}
+
+.dates {
+  width: 100%;
+  display: flex;
+  padding: 35px 35px 0 25px;
+  justify-content: flex-start;
+  gap: 20px;
+  color: var(--Smokey-grey);
+}
+
+.day,
+.year,
+.month {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: none;
+  color: var(--Smokey-grey);
+  height: 40px;
+  width: 100px;
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-align:left;
+  padding: 7px;
+  border-color: lightgray;
+  border-radius: 3px;
+}
+
+.error-day, .error-month, .error-year {
+    height: 1.2rem;
+    color: red;
+    font-weight: lighter;
+    font-size:smaller;
+} 
+
+.button {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.line {
+  border: 1px solid lightgray;
+  width: 400px;
+  height: 1px;
+  border-color: var(--Light-grey);
+  margin-left: 25px;
+  display: inline;
+}
+
+.arrow {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  background-color: var(--my-purple);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.random {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #000;
+  transform: rotate(45deg);
+}
+
+.age {
+  flex: 9 1 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 50px;
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.dash {
+    color: var(--my-purple);
+    
+}
+
+.attribution {
+  height: 3vh;
+  position: fixed;
+  bottom: 0;
+}
+
+
+.border-color-red {
+    border-color: red;
+}
+
+.text-color-red {
+    color: red;
+}
